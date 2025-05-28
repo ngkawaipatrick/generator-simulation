@@ -1032,7 +1032,7 @@ function diagram(u, v) {
     line(u - 3, vT, u + 3, vT);                            // Draw the tick
   }
   ctx.textAlign = "right";                                 // Text alignment: right-aligned
-  ctx.fillText("Induced emf V", u - 5, v - 35);              // Label the U-axis
+  ctx.fillText("Induced emf ɛ", u - 5, v - 35);              // Label the U-axis
   var a = 75 * omega / PI;                                 // Amplitude (pixels)
   var f1 = omega / pixT;                                   // Factor for the time axis
   newPath();                                               // New graphics path (default values)
