@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Generator</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="Generator_files/app.css">
+<style>
+div#total { width: 840px; height: 600px; }
+div#canvas { width: 600px; height: 600px; }
+div#panel { left: 600px; width: 240px; height: 600px; }
+.pos1 { left: 10px; }
+button { width: 220px; }
+input[type="range"] { width: 220px; }
+</style>
+<script src="Generator_files/generator.js"></script>
+<script src="Generator_files/generator_en.js"></script>
+<script src="Generator_files/page_phen.js"></script>
+<meta name="description" content="HTML5 app: Generator">
+<meta name="author" content="Walter Fendt">
+<meta name="keywords" content="app, physics, electricity, electrodynamics, generator, induction">
+</head>
+
+<body class="vsc-initialized">
+
+<h1>Generator Flux vs Induced EMF</h1>
+
+<p>This HTML5 app simulates a <em class="Begriff">generator</em>.</p>
+<p>Notice that when the magnetic flux is maximum / minimum, the induced emf must be 0.</p>
+<p>This is because the edges of the coil does not cut through the magnetic field lines at those moments.</p>
+<p>Because <em class="Begriff">ε</em> = <em class="Begriff">NBAω</em> sin(<em class="Begriff">ωt</em>).</p>
+
+<div id="total">
+  <div id="canvas"><canvas id="cv" width="600" height="600">This browser doesn't support HTML5 canvas!</canvas></div>
+  <div id="panel">
+    <div style="top: 20px;"><input type="radio" id="rb1a" name="bg" value=""><label for="rb1" id="rb1b">Without commutator</label></div>
+    <div style="top: 50px;"><input type="radio" id="rb2a" name="bg" value="" checked="checked"><label for="rb2" id="rb2b">With commutator</label></div>
+    <div style="top: 90px;"><button id="bu1" style="background-color: #ff6060;">Change direction</button></div>
+    <div style="top: 140px;"><input type="range" id="sl" min="0" max="20" step="1" value="20"></div>
+    <div style="top: 170px;"><span id="op" class="pos1">12.0 rot/min</span></div>
+    <div style="top: 200px;"><button id="bu2" style="background-color: #ffff00;">Pause</button></div>
+    <div style="top: 250px;"><input type="checkbox" id="cb1a" name="cb1a" value="" checked="checked"><label for="cb1a" id="cb1b" style="color: #000000;">Direction of movement</label></div>
+    <div style="top: 280px;"><input type="checkbox" id="cb2a" name="cb2a" value="" checked="checked"><label for="cb2a" id="cb2b" style="color: #0000ff;">Magnetic field</label></div>
+    <div style="top: 310px;"><input type="checkbox" id="cb3a" name="cb3a" value="" checked="checked"><label for="cb3a" id="cb3b" style="color: #ff0000;">Induced current</label></div>
+    <div style="top: 360px;"><span class="pos1" id="author">W. Fendt 1998, Patrick</span></div>
+    <div style="top: 380px;"><span class="pos1" id="translator"></span></div>
+  </div>
+</div>
+
+
+<div class="Abstand"> </div><hr class="Trennlinie"><div class="Abstand"> </div><div id="Index"><div id="Index1"><a href="https://www.walter-fendt.de/html5/phen/index.html"><img src="Generator_files/javaphys.gif" alt="Physics"></a></div><div id="Index2"><a href="https://www.walter-fendt.de/html5/phen/index.html">Physics Apps</a></div></div><p class="Ende">URL: https://www.walter-fendt.de/html5/phen/generator_en.htm<br>Walter Fendt, May 8, 1998 <br>(加料 by Patrick on May 28, 2025)<br>&nbsp;<br><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="Generator_files/88x31.png"></a><br>This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+
+<p>Thanks to Mr. <a href="http://www.jgiesen.de/">Jürgen Giesen</a> and Mr. Teun Koops for their valuable suggestions!</p>
+
+
+
+</body></html>
