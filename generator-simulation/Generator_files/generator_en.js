@@ -3,8 +3,8 @@
 
 // Texte in HTML-Schreibweise;
 
-var text01 = "Without commutator";
-var text02 = "With commutator";
+var text01 = "Use slip rings";
+var text02 = "Use commutator";
 var text03 = "Change rotation direction";
 var text04 = ["Start", "Pause", "Resume"];
 var text05 = "Direction of movement";
