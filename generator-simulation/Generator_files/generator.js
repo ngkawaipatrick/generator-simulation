@@ -230,7 +230,7 @@ function reactionSlider(r) {
   var s = (n * 0.6).toFixed(1);                            // String for rotation speed value
   s = s.replace(".", decimalSeparator);                    // Replace a period with a comma if necessary
   if (n == 0) s = "0";                                     // Special case for 0 (no decimal places)
-  op.innerHTML = s + " " + rotationsPerMinute;             // Display rotation speed (rotations per minute)
+  op.innerHTML = "<i>ω</i> = " + s + " " + rotationsPerMinute;             // Display rotation speed (rotations per minute)
   nPer = Math.floor(n / 2);                                // Maximum number of periods
   if (r != false) reset();                                 // If desired, reset to the initial position
 }
